@@ -1,0 +1,1036 @@
+# IranCoin Premium — جامع‌ترین فهرست کارها از ۲۰ پارت پرامپت
+
+> این فایل از سند اصلی `all_prompts.md` استخراج شده است. هر ردیف یک موضوع یا الزام قابل پیگیری است؛ مواردی که هنوز پیاده‌سازی نشده‌اند عمداً با `[ ]` باقی مانده‌اند. این چک‌لیست برنامهٔ محصول و مهندسی است، نه تأییدیهٔ حقوقی، امنیتی یا مجوز فعالیت مالی.
+
+## وضعیت این نسخه
+
+- [x] فرانت‌اند اولیه با React و Tailwind راه‌اندازی شده است.
+- [x] صفحات Landing، Research Journal، Workspace Dashboard، Pricing و Profile پیاده‌سازی شده‌اند.
+- [x] حالت Loading و Toast موفقیت/خطا برای ذخیرهٔ پروفایل پیاده‌سازی شده است.
+- [x] TypeScript check، production build و بررسی بصری desktop/mobile انجام شده است.
+- [ ] بک‌اند، احراز هویت، دیتابیس، پرداخت، اتصال venue و اجرای واقعی معامله هنوز پیاده‌سازی نشده‌اند.
+
+## کارهای فرابخشی
+
+- [ ] ثبت تصمیمات محصول، فرضیات، unknownها، ریسک‌ها و validation taskها در decision register.
+- [ ] بازبینی همهٔ سیاست‌ها، مستندات رسمی، مقررات و Terms قبل از هر قابلیت مادی یا انتشار store.
+- [ ] تفکیک public education، market information، signals، automated execution و portfolio-management-like behavior.
+- [ ] طراحی capability matrix بر اساس platform، country، legal entity، license، eligibility، KYC/AML، venue، instrument، payment، entitlement و technical readiness.
+- [ ] تعریف OFF state و explanation state برای هر قابلیت محدودشده؛ نبودن دکمه به‌جای توضیح قابل قبول نیست.
+- [ ] پایبندی به عدم نمایش بازده تضمینی، scarcity مصنوعی، reviews ساختگی، certainty کاذب یا ادعاهای تأییدنشده.
+- [ ] ثبت منبع، زمان به‌روزرسانی، سطح اطمینان و محدودیت در کنار هر ادعای پژوهشی یا سیگنال.
+- [ ] آماده‌سازی localization منابع، design tokens، analytics taxonomy و domain contracts برای همهٔ clientها.
+- [ ] تعریف معیارهای موفقیت، accessibility، performance budget، error budget و release criteria.
+
+## Part 01 — MASTER PROMPT — PART 1
+
+> محدودهٔ منبع: خطوط 11 تا 5276. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] Global Product, UX/UI, Frontend Architecture, Compliance-Aware Distribution, Localization, Subscription, Security, and Design-System Specification _(منبع: خط 15)_
+- [ ] NON-NEGOTIABLE TRUTH RULE _(منبع: خط 23)_
+- [ ] CRITICAL COMMERCIAL AND DISTRIBUTION CONSTRAINT _(منبع: خط 26)_
+- [ ] SECURITY-FIRST INTERPRETATION OF API CREDENTIALS _(منبع: خط 31)_
+- [ ] HUMAN-FIRST PRODUCT PRINCIPLE _(منبع: خط 34)_
+- [ ] PRODUCT FAMILY _(منبع: خط 37)_
+- [ ] CORE OFFERS _(منبع: خط 47)_
+- [ ] TRADING VENUES / MODES _(منبع: خط 61)_
+- [ ] PLATFORM STRATEGY _(منبع: خط 80)_
+- [ ] DESIGN LANGUAGE _(منبع: خط 89)_
+- [ ] BRANDING / LOGO _(منبع: خط 94)_
+- [ ] SOURCE-OF-TRUTH HIERARCHY _(منبع: خط 97)_
+- [ ] CURRENTLY VERIFIED REFERENCE REGISTER _(منبع: خط 109)_
+- [ ] Apple _(منبع: خط 112)_
+- [ ] Google Play / Android _(منبع: خط 120)_
+- [ ] Flutter / Web _(منبع: خط 128)_
+- [ ] Financial / regulatory references _(منبع: خط 135)_
+- [ ] AI / Brand asset tooling _(منبع: خط 143)_
+- [ ] Immediate next inputs required from the product owner _(منبع: خط 5235)_
+- [ ] Hard-stop questions _(منبع: خط 5251)_
+- [ ] Design reference direction _(منبع: خط 5261)_
+- [ ] Final non-negotiable statement _(منبع: خط 5264)_
+
+## Part 02 — MASTER PROMPT — PART 2
+
+> محدودهٔ منبع: خطوط 5277 تا 10134. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] Backend Architecture, Domain Model, Security Architecture, Entitlements, Payments, Trading Connectivity, AI Orchestration, Admin Control Plane, Observability, QA, and Production Readiness _(منبع: خط 5280)_
+- [ ] 1.1 Canonical architecture _(منبع: خط 5323)_
+- [ ] 1.2 Source-of-truth rule _(منبع: خط 5372)_
+- [ ] Public Web / PWA _(منبع: خط 5409)_
+- [ ] Application Layer _(منبع: خط 5422)_
+- [ ] Backend _(منبع: خط 5431)_
+- [ ] Database _(منبع: خط 5435)_
+- [ ] Messaging _(منبع: خط 5443)_
+- [ ] Infrastructure _(منبع: خط 5458)_
+- [ ] 4.1 Account lifecycle _(منبع: خط 5494)_
+- [ ] 4.2 Authentication methods _(منبع: خط 5507)_
+- [ ] 4.3 Session model _(منبع: خط 5519)_
+- [ ] 4.4 Owner account _(منبع: خط 5543)_
+- [ ] 7.1 Commercial terms _(منبع: خط 5687)_
+- [ ] 7.2 Entitlement object _(منبع: خط 5699)_
+- [ ] 7.3 Entitlement is not the same as payment _(منبع: خط 5718)_
+- [ ] 7.4 Reconciliation _(منبع: خط 5746)_
+- [ ] 10.1 User credential onboarding _(منبع: خط 5845)_
+- [ ] 10.2 Secret storage _(منبع: خط 5861)_
+- [ ] 10.3 Admin visibility _(منبع: خط 5870)_
+- [ ] 10.4 Credential revocation _(منبع: خط 5893)_
+- [ ] 12.1 Spot _(منبع: خط 5956)_
+- [ ] 12.2 Perpetual / Futures _(منبع: خط 5964)_
+- [ ] 12.3 Hybrid _(منبع: خط 5974)_
+- [ ] 12.4 Custom _(منبع: خط 5980)_
+- [ ] Agent A — Strategy Intelligence _(منبع: خط 6123)_
+- [ ] Agent B — Risk & Capital Intelligence _(منبع: خط 6134)_
+- [ ] Agent C — Fundamental & Journal Intelligence _(منبع: خط 6146)_
+- [ ] Level 0 — Informational _(منبع: خط 6571)_
+- [ ] Level 1 — Reversible _(منبع: خط 6577)_
+- [ ] Level 2 — Operational _(منبع: خط 6583)_
+- [ ] Level 3 — Financial / Security Critical _(منبع: خط 6589)_
+- [ ] Metrics _(منبع: خط 6656)_
+- [ ] Logs _(منبع: خط 6676)_
+- [ ] Traces _(منبع: خط 6688)_
+- [ ] Overview _(منبع: خط 7163)_
+- [ ] Trading _(منبع: خط 7172)_
+- [ ] Signals _(منبع: خط 7181)_
+- [ ] Intelligence _(منبع: خط 7188)_
+- [ ] Billing _(منبع: خط 7194)_
+- [ ] Security _(منبع: خط 7201)_
+- [ ] Settings _(منبع: خط 7208)_
+- [ ] Unit tests _(منبع: خط 7428)_
+- [ ] Integration tests _(منبع: خط 7438)_
+- [ ] End-to-end _(منبع: خط 7447)_
+- [ ] Chaos / resilience _(منبع: خط 7458)_
+- [ ] Phase A _(منبع: خط 8978)_
+- [ ] Phase B _(منبع: خط 8991)_
+- [ ] Phase C _(منبع: خط 9000)_
+- [ ] Phase D _(منبع: خط 9007)_
+- [ ] Phase E _(منبع: خط 9014)_
+- [ ] Foundation _(منبع: خط 9973)_
+- [ ] Domain _(منبع: خط 9984)_
+- [ ] Public web _(منبع: خط 9997)_
+- [ ] Customer app _(منبع: خط 10011)_
+- [ ] Admin _(منبع: خط 10024)_
+- [ ] AI _(منبع: خط 10065)_
+- [ ] Distribution _(منبع: خط 10076)_
+
+## Part 03 — MASTER PROMPT — PART 3
+
+> محدودهٔ منبع: خطوط 10135 تا 12058. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] Complete UX/UI System, Screen-by-Screen Product Specification, Design Tokens, Motion System, RTL/LTR Localization, Responsive Behavior, Accessibility, and Frontend Implementation Contract _(منبع: خط 10138)_
+- [ ] 2.1 Trust before excitement _(منبع: خط 10171)_
+- [ ] 2.2 Calm authority _(منبع: خط 10174)_
+- [ ] 2.3 Progressive disclosure _(منبع: خط 10177)_
+- [ ] 2.4 Explain before asking _(منبع: خط 10180)_
+- [ ] 2.5 State is visible _(منبع: خط 10183)_
+- [ ] 2.6 Motion communicates structure _(منبع: خط 10186)_
+- [ ] 2.7 Web-first discoverability, app-first operations _(منبع: خط 10189)_
+- [ ] 4.1 Color architecture _(منبع: خط 10252)_
+- [ ] 4.2 Typography _(منبع: خط 10281)_
+- [ ] 4.3 Spacing _(منبع: خط 10300)_
+- [ ] 4.4 Shape _(منبع: خط 10303)_
+- [ ] 4.5 Elevation _(منبع: خط 10306)_
+- [ ] 4.6 Iconography _(منبع: خط 10309)_
+- [ ] 5.1 Motion tiers _(منبع: خط 10318)_
+- [ ] 5.2 Duration principles _(منبع: خط 10327)_
+- [ ] 5.3 Easing _(منبع: خط 10336)_
+- [ ] 5.4 Reduced motion _(منبع: خط 10339)_
+- [ ] 5.5 Premium scroll scene _(منبع: خط 10348)_
+- [ ] 5.6 Page transitions _(منبع: خط 10360)_
+- [ ] 8.1 Hero _(منبع: خط 10434)_
+- [ ] 8.2 Philosophy section _(منبع: خط 10456)_
+- [ ] 8.3 Product split _(منبع: خط 10459)_
+- [ ] 8.4 Market coverage _(منبع: خط 10467)_
+- [ ] 8.5 AI decision architecture _(منبع: خط 10476)_
+- [ ] 8.6 How it works _(منبع: خط 10483)_
+- [ ] 8.7 Product visual laboratory _(منبع: خط 10492)_
+- [ ] 8.8 Risk transparency _(منبع: خط 10495)_
+- [ ] 8.9 Pricing preview _(منبع: خط 10498)_
+- [ ] 8.10 Editorial proof _(منبع: خط 10501)_
+- [ ] 8.11 Final CTA _(منبع: خط 10504)_
+- [ ] Step 1 — Product _(منبع: خط 10582)_
+- [ ] Step 2 — Market _(منبع: خط 10585)_
+- [ ] Step 3 — Execution mode _(منبع: خط 10588)_
+- [ ] Step 4 — Duration _(منبع: خط 10591)_
+- [ ] Step 5 — Review _(منبع: خط 10594)_
+- [ ] Step 6 — Payment _(منبع: خط 10599)_
+- [ ] Step 7 — Activation _(منبع: خط 10602)_
+- [ ] Step 8 — Connection _(منبع: خط 10605)_
+- [ ] Step 9 — Connection validation _(منبع: خط 10608)_
+- [ ] 13.1 Automation status _(منبع: خط 10673)_
+- [ ] APPENDIX A1: SCREEN QA SCENARIO SET 1 _(منبع: خط 11957)_
+- [ ] APPENDIX A2: SCREEN QA SCENARIO SET 2 _(منبع: خط 11962)_
+- [ ] APPENDIX A3: SCREEN QA SCENARIO SET 3 _(منبع: خط 11967)_
+- [ ] APPENDIX A4: SCREEN QA SCENARIO SET 4 _(منبع: خط 11972)_
+- [ ] APPENDIX A5: SCREEN QA SCENARIO SET 5 _(منبع: خط 11977)_
+- [ ] APPENDIX A6: SCREEN QA SCENARIO SET 6 _(منبع: خط 11982)_
+- [ ] APPENDIX A7: SCREEN QA SCENARIO SET 7 _(منبع: خط 11987)_
+- [ ] APPENDIX A8: SCREEN QA SCENARIO SET 8 _(منبع: خط 11992)_
+- [ ] APPENDIX A9: SCREEN QA SCENARIO SET 9 _(منبع: خط 11997)_
+- [ ] APPENDIX A10: SCREEN QA SCENARIO SET 10 _(منبع: خط 12002)_
+- [ ] APPENDIX A11: SCREEN QA SCENARIO SET 11 _(منبع: خط 12007)_
+- [ ] APPENDIX A12: SCREEN QA SCENARIO SET 12 _(منبع: خط 12012)_
+- [ ] APPENDIX A13: SCREEN QA SCENARIO SET 13 _(منبع: خط 12017)_
+- [ ] APPENDIX A14: SCREEN QA SCENARIO SET 14 _(منبع: خط 12022)_
+- [ ] APPENDIX A15: SCREEN QA SCENARIO SET 15 _(منبع: خط 12027)_
+- [ ] APPENDIX A16: SCREEN QA SCENARIO SET 16 _(منبع: خط 12032)_
+- [ ] APPENDIX A17: SCREEN QA SCENARIO SET 17 _(منبع: خط 12037)_
+- [ ] APPENDIX A18: SCREEN QA SCENARIO SET 18 _(منبع: خط 12042)_
+- [ ] APPENDIX A19: SCREEN QA SCENARIO SET 19 _(منبع: خط 12047)_
+- [ ] APPENDIX A20: SCREEN QA SCENARIO SET 20 _(منبع: خط 12052)_
+
+## Part 04 — PART 4 — SECURITY, TRUST, COMPLIANCE UX, ACCESSIBILITY, QA & RELEASE ENGINEERING
+
+> محدودهٔ منبع: خطوط 12059 تا 13924. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] PART 4 — SECURITY, TRUST, COMPLIANCE UX, ACCESSIBILITY, QA & RELEASE ENGINEERING _(منبع: خط 12062)_
+- [ ] PART 4 — SECURITY, IDENTITY, TRUST, COMPLIANCE UX, ACCESSIBILITY, QA & RELEASE ENGINEERING _(منبع: خط 12067)_
+- [ ] 4.1 SECURITY THREAT MODEL _(منبع: خط 12087)_
+- [ ] 4.2 IDENTITY ARCHITECTURE _(منبع: خط 12144)_
+- [ ] 4.3 AUTHORIZATION & RBAC _(منبع: خط 12188)_
+- [ ] 4.4 SECRET & EXCHANGE CREDENTIAL UX _(منبع: خط 12234)_
+- [ ] 4.5 SECURITY UX MICROCOPY _(منبع: خط 12279)_
+- [ ] 4.6 ADMIN SECURITY CONSOLE _(منبع: خط 12304)_
+- [ ] 4.7 AUDIT LOGGING _(منبع: خط 12334)_
+- [ ] 4.8 AI GOVERNANCE _(منبع: خط 12380)_
+- [ ] 4.9 16+ ANALYST CONSENSUS LAYER _(منبع: خط 12432)_
+- [ ] 4.10 RISK ENGINE _(منبع: خط 12476)_
+- [ ] 4.11 TRADING EXECUTION SAFETY _(منبع: خط 12524)_
+- [ ] 4.12 PAYMENT & ENTITLEMENT SECURITY _(منبع: خط 12556)_
+- [ ] 4.13 PRODUCT CONFIGURATION MODEL _(منبع: خط 12596)_
+- [ ] 4.14 COMPLIANCE GATING ENGINE _(منبع: خط 12621)_
+- [ ] 4.15 ACCESSIBILITY _(منبع: خط 12642)_
+- [ ] 4.16 RTL/LTR INTERNATIONALIZATION _(منبع: خط 12668)_
+- [ ] 4.17 TYPOGRAPHY SYSTEM _(منبع: خط 12702)_
+- [ ] 4.18 ERROR & RECOVERY UX _(منبع: خط 12730)_
+- [ ] 4.19 OBSERVABILITY _(منبع: خط 12758)_
+- [ ] 4.20 BACKUP, DR & BUSINESS CONTINUITY _(منبع: خط 12789)_
+- [ ] 4.21 QA TEST PYRAMID _(منبع: خط 12817)_
+- [ ] 4.22 RELEASE GATES _(منبع: خط 12865)_
+- [ ] 4.23 FRONTEND PERFORMANCE _(منبع: خط 12893)_
+- [ ] 4.24 CONTENT & TRUST _(منبع: خط 12914)_
+- [ ] 4.25 TRUST CENTER _(منبع: خط 12938)_
+- [ ] 4.26 FINAL IMPLEMENTATION DIRECTIVE _(منبع: خط 12958)_
+- [ ] 4.27 MASTER ACCEPTANCE CHECKLIST _(منبع: خط 12990)_
+- [ ] 4.28 OFFICIAL REFERENCE BASELINE _(منبع: خط 13018)_
+- [ ] 4.29 REQUIRED SCHEMAS AND CONTRACTS _(منبع: خط 13030)_
+- [ ] 4.30 SAFE DEFAULTS _(منبع: خط 13122)_
+- [ ] 4.31.01 IMPLEMENTATION WORK PACKAGE 1 _(منبع: خط 13143)_
+- [ ] 4.31.02 IMPLEMENTATION WORK PACKAGE 2 _(منبع: خط 13169)_
+- [ ] 4.31.03 IMPLEMENTATION WORK PACKAGE 3 _(منبع: خط 13195)_
+- [ ] 4.31.04 IMPLEMENTATION WORK PACKAGE 4 _(منبع: خط 13221)_
+- [ ] 4.31.05 IMPLEMENTATION WORK PACKAGE 5 _(منبع: خط 13247)_
+- [ ] 4.31.06 IMPLEMENTATION WORK PACKAGE 6 _(منبع: خط 13273)_
+- [ ] 4.31.07 IMPLEMENTATION WORK PACKAGE 7 _(منبع: خط 13299)_
+- [ ] 4.31.08 IMPLEMENTATION WORK PACKAGE 8 _(منبع: خط 13325)_
+- [ ] 4.31.09 IMPLEMENTATION WORK PACKAGE 9 _(منبع: خط 13351)_
+- [ ] 4.31.10 IMPLEMENTATION WORK PACKAGE 10 _(منبع: خط 13377)_
+- [ ] 4.31.11 IMPLEMENTATION WORK PACKAGE 11 _(منبع: خط 13403)_
+- [ ] 4.31.12 IMPLEMENTATION WORK PACKAGE 12 _(منبع: خط 13429)_
+- [ ] 4.31.13 IMPLEMENTATION WORK PACKAGE 13 _(منبع: خط 13455)_
+- [ ] 4.31.14 IMPLEMENTATION WORK PACKAGE 14 _(منبع: خط 13481)_
+- [ ] 4.31.15 IMPLEMENTATION WORK PACKAGE 15 _(منبع: خط 13507)_
+- [ ] 4.31.16 IMPLEMENTATION WORK PACKAGE 16 _(منبع: خط 13533)_
+- [ ] 4.31.17 IMPLEMENTATION WORK PACKAGE 17 _(منبع: خط 13559)_
+- [ ] 4.31.18 IMPLEMENTATION WORK PACKAGE 18 _(منبع: خط 13585)_
+- [ ] 4.31.19 IMPLEMENTATION WORK PACKAGE 19 _(منبع: خط 13611)_
+- [ ] 4.31.20 IMPLEMENTATION WORK PACKAGE 20 _(منبع: خط 13637)_
+- [ ] 4.31.21 IMPLEMENTATION WORK PACKAGE 21 _(منبع: خط 13663)_
+- [ ] 4.31.22 IMPLEMENTATION WORK PACKAGE 22 _(منبع: خط 13689)_
+- [ ] 4.31.23 IMPLEMENTATION WORK PACKAGE 23 _(منبع: خط 13715)_
+- [ ] 4.31.24 IMPLEMENTATION WORK PACKAGE 24 _(منبع: خط 13741)_
+- [ ] 4.31.25 IMPLEMENTATION WORK PACKAGE 25 _(منبع: خط 13767)_
+- [ ] 4.31.26 IMPLEMENTATION WORK PACKAGE 26 _(منبع: خط 13793)_
+- [ ] 4.31.27 IMPLEMENTATION WORK PACKAGE 27 _(منبع: خط 13819)_
+- [ ] 4.31.28 IMPLEMENTATION WORK PACKAGE 28 _(منبع: خط 13845)_
+- [ ] 4.31.29 IMPLEMENTATION WORK PACKAGE 29 _(منبع: خط 13871)_
+- [ ] 4.31.30 IMPLEMENTATION WORK PACKAGE 30 _(منبع: خط 13897)_
+
+## Part 05 — PART 5 — PRODUCT ENGINEERING, API CONTRACTS, DATA MODEL, INTEGRATIONS, DEVOPS & PLATFORM RELEASE ARCHITECTURE
+
+> محدودهٔ منبع: خطوط 13925 تا 17714. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 5.0 ENGINEERING NORTH STAR _(منبع: خط 13945)_
+- [ ] 5.1.1 EXPERIENCE PLANE _(منبع: خط 13983)_
+- [ ] 5.1.2 APPLICATION PLANE _(منبع: خط 14008)_
+- [ ] 5.1.3 DECISION PLANE _(منبع: خط 14029)_
+- [ ] 5.1.4 EXECUTION PLANE _(منبع: خط 14046)_
+- [ ] 5.1.5 CONTROL PLANE _(منبع: خط 14064)_
+- [ ] 5.1.6 DATA / OBSERVABILITY PLANE _(منبع: خط 14087)_
+- [ ] users _(منبع: خط 14220)_
+- [ ] user_profiles _(منبع: خط 14241)_
+- [ ] sessions _(منبع: خط 14256)_
+- [ ] devices _(منبع: خط 14269)_
+- [ ] subscriptions _(منبع: خط 14283)_
+- [ ] entitlements _(منبع: خط 14301)_
+- [ ] exchange_connections _(منبع: خط 14316)_
+- [ ] strategies _(منبع: خط 14334)_
+- [ ] signals _(منبع: خط 14350)_
+- [ ] signal_evidence _(منبع: خط 14368)_
+- [ ] orders _(منبع: خط 14381)_
+- [ ] positions _(منبع: خط 14403)_
+- [ ] risk_decisions _(منبع: خط 14420)_
+- [ ] payments _(منبع: خط 14437)_
+- [ ] payment_events _(منبع: خط 14452)_
+- [ ] audit_events _(منبع: خط 14465)_
+
+## Part 06 — PART 6 — COMPLETE FRONTEND / DESIGN SYSTEM / UX / MOTION / PAGE-BY-PAGE IMPLEMENTATION SPECIFICATION
+
+> محدودهٔ منبع: خطوط 17715 تا 20824. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 07 — PART 7 — END-TO-END TRADING CORE, BROKER/EXCHANGE CONNECTIVITY, SIGNAL PIPELINE, EXECUTION, RECONCILIATION & OPERATIONAL CONTROL
+
+> محدودهٔ منبع: خطوط 20825 تا 23264. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 08 — PART 8 — DATABASE SCHEMA, API CONTRACTS, EVENT SCHEMAS, WEBSOCKET PROTOCOLS, WEBHOOKS & ERROR MODEL
+
+> محدودهٔ منبع: خطوط 23265 تا 26204. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 09 — PART 9 — CLOUD INFRASTRUCTURE, DEVOPS, CONTAINERS, KUBERNETES, CI/CD, SECRETS, OBSERVABILITY, BACKUP, DISASTER RECOVERY & PRODUCTION OPERATIONS
+
+> محدودهٔ منبع: خطوط 26205 تا 28596. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 10 — PART 10 — SECURITY ARCHITECTURE, THREAT MODEL, ZERO-TRUST, APPLICATION SECURITY, API SECURITY, PRIVACY & INCIDENT RESPONSE
+
+> محدودهٔ منبع: خطوط 28597 تا 31269. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 11 — PART 11 — PRICING, SUBSCRIPTIONS, BILLING, CHECKOUT, STORE PAYMENTS, TAX, REFUNDS, CHARGEBACKS, ENTITLEMENTS & REVENUE OPERATIONS
+
+> محدودهٔ منبع: خطوط 31270 تا 33435. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+
+## Part 12 — TRADING PLATFORM MASTER PROMPT — PART 12
+
+> محدودهٔ منبع: خطوط 33436 تا 33804. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 12.001 REQUIREMENT _(منبع: خط 33445)_
+- [ ] 12.002 REQUIREMENT _(منبع: خط 33449)_
+- [ ] 12.003 REQUIREMENT _(منبع: خط 33453)_
+- [ ] 12.004 REQUIREMENT _(منبع: خط 33457)_
+- [ ] 12.005 REQUIREMENT _(منبع: خط 33461)_
+- [ ] 12.006 REQUIREMENT _(منبع: خط 33465)_
+- [ ] 12.007 REQUIREMENT _(منبع: خط 33469)_
+- [ ] 12.008 REQUIREMENT _(منبع: خط 33473)_
+- [ ] 12.009 REQUIREMENT _(منبع: خط 33477)_
+- [ ] 12.010 REQUIREMENT _(منبع: خط 33481)_
+- [ ] 12.011 REQUIREMENT _(منبع: خط 33485)_
+- [ ] 12.012 REQUIREMENT _(منبع: خط 33489)_
+- [ ] 12.013 REQUIREMENT _(منبع: خط 33493)_
+- [ ] 12.014 REQUIREMENT _(منبع: خط 33497)_
+- [ ] 12.015 REQUIREMENT _(منبع: خط 33501)_
+- [ ] 12.016 REQUIREMENT _(منبع: خط 33505)_
+- [ ] 12.017 REQUIREMENT _(منبع: خط 33509)_
+- [ ] 12.018 REQUIREMENT _(منبع: خط 33513)_
+- [ ] 12.019 REQUIREMENT _(منبع: خط 33517)_
+- [ ] 12.020 REQUIREMENT _(منبع: خط 33521)_
+- [ ] 12.021 REQUIREMENT _(منبع: خط 33525)_
+- [ ] 12.022 REQUIREMENT _(منبع: خط 33529)_
+- [ ] 12.023 REQUIREMENT _(منبع: خط 33533)_
+- [ ] 12.024 REQUIREMENT _(منبع: خط 33537)_
+- [ ] 12.025 REQUIREMENT _(منبع: خط 33541)_
+- [ ] 12.026 REQUIREMENT _(منبع: خط 33545)_
+- [ ] 12.027 REQUIREMENT _(منبع: خط 33549)_
+- [ ] 12.028 REQUIREMENT _(منبع: خط 33553)_
+- [ ] 12.029 REQUIREMENT _(منبع: خط 33557)_
+- [ ] 12.030 REQUIREMENT _(منبع: خط 33561)_
+- [ ] 12.031 REQUIREMENT _(منبع: خط 33565)_
+- [ ] 12.032 REQUIREMENT _(منبع: خط 33569)_
+- [ ] 12.033 REQUIREMENT _(منبع: خط 33573)_
+- [ ] 12.034 REQUIREMENT _(منبع: خط 33577)_
+- [ ] 12.035 REQUIREMENT _(منبع: خط 33581)_
+- [ ] 12.036 REQUIREMENT _(منبع: خط 33585)_
+- [ ] 12.037 REQUIREMENT _(منبع: خط 33589)_
+- [ ] 12.038 REQUIREMENT _(منبع: خط 33593)_
+- [ ] 12.039 REQUIREMENT _(منبع: خط 33597)_
+- [ ] 12.040 REQUIREMENT _(منبع: خط 33601)_
+- [ ] 12.041 REQUIREMENT _(منبع: خط 33605)_
+- [ ] 12.042 REQUIREMENT _(منبع: خط 33609)_
+- [ ] 12.043 REQUIREMENT _(منبع: خط 33613)_
+- [ ] 12.044 REQUIREMENT _(منبع: خط 33617)_
+- [ ] 12.045 REQUIREMENT _(منبع: خط 33621)_
+- [ ] 12.046 REQUIREMENT _(منبع: خط 33625)_
+- [ ] 12.047 REQUIREMENT _(منبع: خط 33629)_
+- [ ] 12.048 REQUIREMENT _(منبع: خط 33633)_
+- [ ] 12.049 REQUIREMENT _(منبع: خط 33637)_
+- [ ] 12.050 REQUIREMENT _(منبع: خط 33641)_
+- [ ] 12.051 REQUIREMENT _(منبع: خط 33645)_
+- [ ] 12.052 REQUIREMENT _(منبع: خط 33649)_
+- [ ] 12.053 REQUIREMENT _(منبع: خط 33653)_
+- [ ] 12.054 REQUIREMENT _(منبع: خط 33657)_
+- [ ] 12.055 REQUIREMENT _(منبع: خط 33661)_
+- [ ] 12.056 REQUIREMENT _(منبع: خط 33665)_
+- [ ] 12.057 REQUIREMENT _(منبع: خط 33669)_
+- [ ] 12.058 REQUIREMENT _(منبع: خط 33673)_
+- [ ] 12.059 REQUIREMENT _(منبع: خط 33677)_
+- [ ] 12.060 REQUIREMENT _(منبع: خط 33681)_
+- [ ] 12.061 REQUIREMENT _(منبع: خط 33685)_
+- [ ] 12.062 REQUIREMENT _(منبع: خط 33689)_
+- [ ] 12.063 REQUIREMENT _(منبع: خط 33693)_
+- [ ] 12.064 REQUIREMENT _(منبع: خط 33697)_
+- [ ] 12.065 REQUIREMENT _(منبع: خط 33701)_
+- [ ] 12.066 REQUIREMENT _(منبع: خط 33705)_
+- [ ] 12.067 REQUIREMENT _(منبع: خط 33709)_
+- [ ] 12.068 REQUIREMENT _(منبع: خط 33713)_
+- [ ] 12.069 REQUIREMENT _(منبع: خط 33717)_
+- [ ] 12.070 REQUIREMENT _(منبع: خط 33721)_
+- [ ] 12.071 REQUIREMENT _(منبع: خط 33725)_
+- [ ] 12.072 REQUIREMENT _(منبع: خط 33729)_
+- [ ] 12.073 REQUIREMENT _(منبع: خط 33733)_
+- [ ] 12.074 REQUIREMENT _(منبع: خط 33737)_
+- [ ] 12.075 REQUIREMENT _(منبع: خط 33741)_
+- [ ] 12.076 REQUIREMENT _(منبع: خط 33745)_
+- [ ] 12.077 REQUIREMENT _(منبع: خط 33749)_
+- [ ] 12.078 REQUIREMENT _(منبع: خط 33753)_
+- [ ] 12.079 REQUIREMENT _(منبع: خط 33757)_
+- [ ] 12.080 REQUIREMENT _(منبع: خط 33761)_
+- [ ] 12.081 REQUIREMENT _(منبع: خط 33765)_
+- [ ] 12.082 REQUIREMENT _(منبع: خط 33769)_
+- [ ] 12.083 REQUIREMENT _(منبع: خط 33773)_
+- [ ] 12.084 REQUIREMENT _(منبع: خط 33777)_
+- [ ] 12.085 REQUIREMENT _(منبع: خط 33781)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 33786)_
+
+## Part 13 — TRADING PLATFORM MASTER PROMPT — PART 13
+
+> محدودهٔ منبع: خطوط 33805 تا 34121. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 13.001 REQUIREMENT _(منبع: خط 33814)_
+- [ ] 13.002 REQUIREMENT _(منبع: خط 33818)_
+- [ ] 13.003 REQUIREMENT _(منبع: خط 33822)_
+- [ ] 13.004 REQUIREMENT _(منبع: خط 33826)_
+- [ ] 13.005 REQUIREMENT _(منبع: خط 33830)_
+- [ ] 13.006 REQUIREMENT _(منبع: خط 33834)_
+- [ ] 13.007 REQUIREMENT _(منبع: خط 33838)_
+- [ ] 13.008 REQUIREMENT _(منبع: خط 33842)_
+- [ ] 13.009 REQUIREMENT _(منبع: خط 33846)_
+- [ ] 13.010 REQUIREMENT _(منبع: خط 33850)_
+- [ ] 13.011 REQUIREMENT _(منبع: خط 33854)_
+- [ ] 13.012 REQUIREMENT _(منبع: خط 33858)_
+- [ ] 13.013 REQUIREMENT _(منبع: خط 33862)_
+- [ ] 13.014 REQUIREMENT _(منبع: خط 33866)_
+- [ ] 13.015 REQUIREMENT _(منبع: خط 33870)_
+- [ ] 13.016 REQUIREMENT _(منبع: خط 33874)_
+- [ ] 13.017 REQUIREMENT _(منبع: خط 33878)_
+- [ ] 13.018 REQUIREMENT _(منبع: خط 33882)_
+- [ ] 13.019 REQUIREMENT _(منبع: خط 33886)_
+- [ ] 13.020 REQUIREMENT _(منبع: خط 33890)_
+- [ ] 13.021 REQUIREMENT _(منبع: خط 33894)_
+- [ ] 13.022 REQUIREMENT _(منبع: خط 33898)_
+- [ ] 13.023 REQUIREMENT _(منبع: خط 33902)_
+- [ ] 13.024 REQUIREMENT _(منبع: خط 33906)_
+- [ ] 13.025 REQUIREMENT _(منبع: خط 33910)_
+- [ ] 13.026 REQUIREMENT _(منبع: خط 33914)_
+- [ ] 13.027 REQUIREMENT _(منبع: خط 33918)_
+- [ ] 13.028 REQUIREMENT _(منبع: خط 33922)_
+- [ ] 13.029 REQUIREMENT _(منبع: خط 33926)_
+- [ ] 13.030 REQUIREMENT _(منبع: خط 33930)_
+- [ ] 13.031 REQUIREMENT _(منبع: خط 33934)_
+- [ ] 13.032 REQUIREMENT _(منبع: خط 33938)_
+- [ ] 13.033 REQUIREMENT _(منبع: خط 33942)_
+- [ ] 13.034 REQUIREMENT _(منبع: خط 33946)_
+- [ ] 13.035 REQUIREMENT _(منبع: خط 33950)_
+- [ ] 13.036 REQUIREMENT _(منبع: خط 33954)_
+- [ ] 13.037 REQUIREMENT _(منبع: خط 33958)_
+- [ ] 13.038 REQUIREMENT _(منبع: خط 33962)_
+- [ ] 13.039 REQUIREMENT _(منبع: خط 33966)_
+- [ ] 13.040 REQUIREMENT _(منبع: خط 33970)_
+- [ ] 13.041 REQUIREMENT _(منبع: خط 33974)_
+- [ ] 13.042 REQUIREMENT _(منبع: خط 33978)_
+- [ ] 13.043 REQUIREMENT _(منبع: خط 33982)_
+- [ ] 13.044 REQUIREMENT _(منبع: خط 33986)_
+- [ ] 13.045 REQUIREMENT _(منبع: خط 33990)_
+- [ ] 13.046 REQUIREMENT _(منبع: خط 33994)_
+- [ ] 13.047 REQUIREMENT _(منبع: خط 33998)_
+- [ ] 13.048 REQUIREMENT _(منبع: خط 34002)_
+- [ ] 13.049 REQUIREMENT _(منبع: خط 34006)_
+- [ ] 13.050 REQUIREMENT _(منبع: خط 34010)_
+- [ ] 13.051 REQUIREMENT _(منبع: خط 34014)_
+- [ ] 13.052 REQUIREMENT _(منبع: خط 34018)_
+- [ ] 13.053 REQUIREMENT _(منبع: خط 34022)_
+- [ ] 13.054 REQUIREMENT _(منبع: خط 34026)_
+- [ ] 13.055 REQUIREMENT _(منبع: خط 34030)_
+- [ ] 13.056 REQUIREMENT _(منبع: خط 34034)_
+- [ ] 13.057 REQUIREMENT _(منبع: خط 34038)_
+- [ ] 13.058 REQUIREMENT _(منبع: خط 34042)_
+- [ ] 13.059 REQUIREMENT _(منبع: خط 34046)_
+- [ ] 13.060 REQUIREMENT _(منبع: خط 34050)_
+- [ ] 13.061 REQUIREMENT _(منبع: خط 34054)_
+- [ ] 13.062 REQUIREMENT _(منبع: خط 34058)_
+- [ ] 13.063 REQUIREMENT _(منبع: خط 34062)_
+- [ ] 13.064 REQUIREMENT _(منبع: خط 34066)_
+- [ ] 13.065 REQUIREMENT _(منبع: خط 34070)_
+- [ ] 13.066 REQUIREMENT _(منبع: خط 34074)_
+- [ ] 13.067 REQUIREMENT _(منبع: خط 34078)_
+- [ ] 13.068 REQUIREMENT _(منبع: خط 34082)_
+- [ ] 13.069 REQUIREMENT _(منبع: خط 34086)_
+- [ ] 13.070 REQUIREMENT _(منبع: خط 34090)_
+- [ ] 13.071 REQUIREMENT _(منبع: خط 34094)_
+- [ ] 13.072 REQUIREMENT _(منبع: خط 34098)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 34103)_
+
+## Part 14 — TRADING PLATFORM MASTER PROMPT — PART 14
+
+> محدودهٔ منبع: خطوط 34122 تا 34434. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 14.001 REQUIREMENT _(منبع: خط 34131)_
+- [ ] 14.002 REQUIREMENT _(منبع: خط 34135)_
+- [ ] 14.003 REQUIREMENT _(منبع: خط 34139)_
+- [ ] 14.004 REQUIREMENT _(منبع: خط 34143)_
+- [ ] 14.005 REQUIREMENT _(منبع: خط 34147)_
+- [ ] 14.006 REQUIREMENT _(منبع: خط 34151)_
+- [ ] 14.007 REQUIREMENT _(منبع: خط 34155)_
+- [ ] 14.008 REQUIREMENT _(منبع: خط 34159)_
+- [ ] 14.009 REQUIREMENT _(منبع: خط 34163)_
+- [ ] 14.010 REQUIREMENT _(منبع: خط 34167)_
+- [ ] 14.011 REQUIREMENT _(منبع: خط 34171)_
+- [ ] 14.012 REQUIREMENT _(منبع: خط 34175)_
+- [ ] 14.013 REQUIREMENT _(منبع: خط 34179)_
+- [ ] 14.014 REQUIREMENT _(منبع: خط 34183)_
+- [ ] 14.015 REQUIREMENT _(منبع: خط 34187)_
+- [ ] 14.016 REQUIREMENT _(منبع: خط 34191)_
+- [ ] 14.017 REQUIREMENT _(منبع: خط 34195)_
+- [ ] 14.018 REQUIREMENT _(منبع: خط 34199)_
+- [ ] 14.019 REQUIREMENT _(منبع: خط 34203)_
+- [ ] 14.020 REQUIREMENT _(منبع: خط 34207)_
+- [ ] 14.021 REQUIREMENT _(منبع: خط 34211)_
+- [ ] 14.022 REQUIREMENT _(منبع: خط 34215)_
+- [ ] 14.023 REQUIREMENT _(منبع: خط 34219)_
+- [ ] 14.024 REQUIREMENT _(منبع: خط 34223)_
+- [ ] 14.025 REQUIREMENT _(منبع: خط 34227)_
+- [ ] 14.026 REQUIREMENT _(منبع: خط 34231)_
+- [ ] 14.027 REQUIREMENT _(منبع: خط 34235)_
+- [ ] 14.028 REQUIREMENT _(منبع: خط 34239)_
+- [ ] 14.029 REQUIREMENT _(منبع: خط 34243)_
+- [ ] 14.030 REQUIREMENT _(منبع: خط 34247)_
+- [ ] 14.031 REQUIREMENT _(منبع: خط 34251)_
+- [ ] 14.032 REQUIREMENT _(منبع: خط 34255)_
+- [ ] 14.033 REQUIREMENT _(منبع: خط 34259)_
+- [ ] 14.034 REQUIREMENT _(منبع: خط 34263)_
+- [ ] 14.035 REQUIREMENT _(منبع: خط 34267)_
+- [ ] 14.036 REQUIREMENT _(منبع: خط 34271)_
+- [ ] 14.037 REQUIREMENT _(منبع: خط 34275)_
+- [ ] 14.038 REQUIREMENT _(منبع: خط 34279)_
+- [ ] 14.039 REQUIREMENT _(منبع: خط 34283)_
+- [ ] 14.040 REQUIREMENT _(منبع: خط 34287)_
+- [ ] 14.041 REQUIREMENT _(منبع: خط 34291)_
+- [ ] 14.042 REQUIREMENT _(منبع: خط 34295)_
+- [ ] 14.043 REQUIREMENT _(منبع: خط 34299)_
+- [ ] 14.044 REQUIREMENT _(منبع: خط 34303)_
+- [ ] 14.045 REQUIREMENT _(منبع: خط 34307)_
+- [ ] 14.046 REQUIREMENT _(منبع: خط 34311)_
+- [ ] 14.047 REQUIREMENT _(منبع: خط 34315)_
+- [ ] 14.048 REQUIREMENT _(منبع: خط 34319)_
+- [ ] 14.049 REQUIREMENT _(منبع: خط 34323)_
+- [ ] 14.050 REQUIREMENT _(منبع: خط 34327)_
+- [ ] 14.051 REQUIREMENT _(منبع: خط 34331)_
+- [ ] 14.052 REQUIREMENT _(منبع: خط 34335)_
+- [ ] 14.053 REQUIREMENT _(منبع: خط 34339)_
+- [ ] 14.054 REQUIREMENT _(منبع: خط 34343)_
+- [ ] 14.055 REQUIREMENT _(منبع: خط 34347)_
+- [ ] 14.056 REQUIREMENT _(منبع: خط 34351)_
+- [ ] 14.057 REQUIREMENT _(منبع: خط 34355)_
+- [ ] 14.058 REQUIREMENT _(منبع: خط 34359)_
+- [ ] 14.059 REQUIREMENT _(منبع: خط 34363)_
+- [ ] 14.060 REQUIREMENT _(منبع: خط 34367)_
+- [ ] 14.061 REQUIREMENT _(منبع: خط 34371)_
+- [ ] 14.062 REQUIREMENT _(منبع: خط 34375)_
+- [ ] 14.063 REQUIREMENT _(منبع: خط 34379)_
+- [ ] 14.064 REQUIREMENT _(منبع: خط 34383)_
+- [ ] 14.065 REQUIREMENT _(منبع: خط 34387)_
+- [ ] 14.066 REQUIREMENT _(منبع: خط 34391)_
+- [ ] 14.067 REQUIREMENT _(منبع: خط 34395)_
+- [ ] 14.068 REQUIREMENT _(منبع: خط 34399)_
+- [ ] 14.069 REQUIREMENT _(منبع: خط 34403)_
+- [ ] 14.070 REQUIREMENT _(منبع: خط 34407)_
+- [ ] 14.071 REQUIREMENT _(منبع: خط 34411)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 34416)_
+
+## Part 15 — TRADING PLATFORM MASTER PROMPT — PART 15
+
+> محدودهٔ منبع: خطوط 34435 تا 34751. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 15.001 REQUIREMENT _(منبع: خط 34444)_
+- [ ] 15.002 REQUIREMENT _(منبع: خط 34448)_
+- [ ] 15.003 REQUIREMENT _(منبع: خط 34452)_
+- [ ] 15.004 REQUIREMENT _(منبع: خط 34456)_
+- [ ] 15.005 REQUIREMENT _(منبع: خط 34460)_
+- [ ] 15.006 REQUIREMENT _(منبع: خط 34464)_
+- [ ] 15.007 REQUIREMENT _(منبع: خط 34468)_
+- [ ] 15.008 REQUIREMENT _(منبع: خط 34472)_
+- [ ] 15.009 REQUIREMENT _(منبع: خط 34476)_
+- [ ] 15.010 REQUIREMENT _(منبع: خط 34480)_
+- [ ] 15.011 REQUIREMENT _(منبع: خط 34484)_
+- [ ] 15.012 REQUIREMENT _(منبع: خط 34488)_
+- [ ] 15.013 REQUIREMENT _(منبع: خط 34492)_
+- [ ] 15.014 REQUIREMENT _(منبع: خط 34496)_
+- [ ] 15.015 REQUIREMENT _(منبع: خط 34500)_
+- [ ] 15.016 REQUIREMENT _(منبع: خط 34504)_
+- [ ] 15.017 REQUIREMENT _(منبع: خط 34508)_
+- [ ] 15.018 REQUIREMENT _(منبع: خط 34512)_
+- [ ] 15.019 REQUIREMENT _(منبع: خط 34516)_
+- [ ] 15.020 REQUIREMENT _(منبع: خط 34520)_
+- [ ] 15.021 REQUIREMENT _(منبع: خط 34524)_
+- [ ] 15.022 REQUIREMENT _(منبع: خط 34528)_
+- [ ] 15.023 REQUIREMENT _(منبع: خط 34532)_
+- [ ] 15.024 REQUIREMENT _(منبع: خط 34536)_
+- [ ] 15.025 REQUIREMENT _(منبع: خط 34540)_
+- [ ] 15.026 REQUIREMENT _(منبع: خط 34544)_
+- [ ] 15.027 REQUIREMENT _(منبع: خط 34548)_
+- [ ] 15.028 REQUIREMENT _(منبع: خط 34552)_
+- [ ] 15.029 REQUIREMENT _(منبع: خط 34556)_
+- [ ] 15.030 REQUIREMENT _(منبع: خط 34560)_
+- [ ] 15.031 REQUIREMENT _(منبع: خط 34564)_
+- [ ] 15.032 REQUIREMENT _(منبع: خط 34568)_
+- [ ] 15.033 REQUIREMENT _(منبع: خط 34572)_
+- [ ] 15.034 REQUIREMENT _(منبع: خط 34576)_
+- [ ] 15.035 REQUIREMENT _(منبع: خط 34580)_
+- [ ] 15.036 REQUIREMENT _(منبع: خط 34584)_
+- [ ] 15.037 REQUIREMENT _(منبع: خط 34588)_
+- [ ] 15.038 REQUIREMENT _(منبع: خط 34592)_
+- [ ] 15.039 REQUIREMENT _(منبع: خط 34596)_
+- [ ] 15.040 REQUIREMENT _(منبع: خط 34600)_
+- [ ] 15.041 REQUIREMENT _(منبع: خط 34604)_
+- [ ] 15.042 REQUIREMENT _(منبع: خط 34608)_
+- [ ] 15.043 REQUIREMENT _(منبع: خط 34612)_
+- [ ] 15.044 REQUIREMENT _(منبع: خط 34616)_
+- [ ] 15.045 REQUIREMENT _(منبع: خط 34620)_
+- [ ] 15.046 REQUIREMENT _(منبع: خط 34624)_
+- [ ] 15.047 REQUIREMENT _(منبع: خط 34628)_
+- [ ] 15.048 REQUIREMENT _(منبع: خط 34632)_
+- [ ] 15.049 REQUIREMENT _(منبع: خط 34636)_
+- [ ] 15.050 REQUIREMENT _(منبع: خط 34640)_
+- [ ] 15.051 REQUIREMENT _(منبع: خط 34644)_
+- [ ] 15.052 REQUIREMENT _(منبع: خط 34648)_
+- [ ] 15.053 REQUIREMENT _(منبع: خط 34652)_
+- [ ] 15.054 REQUIREMENT _(منبع: خط 34656)_
+- [ ] 15.055 REQUIREMENT _(منبع: خط 34660)_
+- [ ] 15.056 REQUIREMENT _(منبع: خط 34664)_
+- [ ] 15.057 REQUIREMENT _(منبع: خط 34668)_
+- [ ] 15.058 REQUIREMENT _(منبع: خط 34672)_
+- [ ] 15.059 REQUIREMENT _(منبع: خط 34676)_
+- [ ] 15.060 REQUIREMENT _(منبع: خط 34680)_
+- [ ] 15.061 REQUIREMENT _(منبع: خط 34684)_
+- [ ] 15.062 REQUIREMENT _(منبع: خط 34688)_
+- [ ] 15.063 REQUIREMENT _(منبع: خط 34692)_
+- [ ] 15.064 REQUIREMENT _(منبع: خط 34696)_
+- [ ] 15.065 REQUIREMENT _(منبع: خط 34700)_
+- [ ] 15.066 REQUIREMENT _(منبع: خط 34704)_
+- [ ] 15.067 REQUIREMENT _(منبع: خط 34708)_
+- [ ] 15.068 REQUIREMENT _(منبع: خط 34712)_
+- [ ] 15.069 REQUIREMENT _(منبع: خط 34716)_
+- [ ] 15.070 REQUIREMENT _(منبع: خط 34720)_
+- [ ] 15.071 REQUIREMENT _(منبع: خط 34724)_
+- [ ] 15.072 REQUIREMENT _(منبع: خط 34728)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 34733)_
+
+## Part 16 — TRADING PLATFORM MASTER PROMPT — PART 16
+
+> محدودهٔ منبع: خطوط 34752 تا 35024. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 16.001 REQUIREMENT _(منبع: خط 34761)_
+- [ ] 16.002 REQUIREMENT _(منبع: خط 34765)_
+- [ ] 16.003 REQUIREMENT _(منبع: خط 34769)_
+- [ ] 16.004 REQUIREMENT _(منبع: خط 34773)_
+- [ ] 16.005 REQUIREMENT _(منبع: خط 34777)_
+- [ ] 16.006 REQUIREMENT _(منبع: خط 34781)_
+- [ ] 16.007 REQUIREMENT _(منبع: خط 34785)_
+- [ ] 16.008 REQUIREMENT _(منبع: خط 34789)_
+- [ ] 16.009 REQUIREMENT _(منبع: خط 34793)_
+- [ ] 16.010 REQUIREMENT _(منبع: خط 34797)_
+- [ ] 16.011 REQUIREMENT _(منبع: خط 34801)_
+- [ ] 16.012 REQUIREMENT _(منبع: خط 34805)_
+- [ ] 16.013 REQUIREMENT _(منبع: خط 34809)_
+- [ ] 16.014 REQUIREMENT _(منبع: خط 34813)_
+- [ ] 16.015 REQUIREMENT _(منبع: خط 34817)_
+- [ ] 16.016 REQUIREMENT _(منبع: خط 34821)_
+- [ ] 16.017 REQUIREMENT _(منبع: خط 34825)_
+- [ ] 16.018 REQUIREMENT _(منبع: خط 34829)_
+- [ ] 16.019 REQUIREMENT _(منبع: خط 34833)_
+- [ ] 16.020 REQUIREMENT _(منبع: خط 34837)_
+- [ ] 16.021 REQUIREMENT _(منبع: خط 34841)_
+- [ ] 16.022 REQUIREMENT _(منبع: خط 34845)_
+- [ ] 16.023 REQUIREMENT _(منبع: خط 34849)_
+- [ ] 16.024 REQUIREMENT _(منبع: خط 34853)_
+- [ ] 16.025 REQUIREMENT _(منبع: خط 34857)_
+- [ ] 16.026 REQUIREMENT _(منبع: خط 34861)_
+- [ ] 16.027 REQUIREMENT _(منبع: خط 34865)_
+- [ ] 16.028 REQUIREMENT _(منبع: خط 34869)_
+- [ ] 16.029 REQUIREMENT _(منبع: خط 34873)_
+- [ ] 16.030 REQUIREMENT _(منبع: خط 34877)_
+- [ ] 16.031 REQUIREMENT _(منبع: خط 34881)_
+- [ ] 16.032 REQUIREMENT _(منبع: خط 34885)_
+- [ ] 16.033 REQUIREMENT _(منبع: خط 34889)_
+- [ ] 16.034 REQUIREMENT _(منبع: خط 34893)_
+- [ ] 16.035 REQUIREMENT _(منبع: خط 34897)_
+- [ ] 16.036 REQUIREMENT _(منبع: خط 34901)_
+- [ ] 16.037 REQUIREMENT _(منبع: خط 34905)_
+- [ ] 16.038 REQUIREMENT _(منبع: خط 34909)_
+- [ ] 16.039 REQUIREMENT _(منبع: خط 34913)_
+- [ ] 16.040 REQUIREMENT _(منبع: خط 34917)_
+- [ ] 16.041 REQUIREMENT _(منبع: خط 34921)_
+- [ ] 16.042 REQUIREMENT _(منبع: خط 34925)_
+- [ ] 16.043 REQUIREMENT _(منبع: خط 34929)_
+- [ ] 16.044 REQUIREMENT _(منبع: خط 34933)_
+- [ ] 16.045 REQUIREMENT _(منبع: خط 34937)_
+- [ ] 16.046 REQUIREMENT _(منبع: خط 34941)_
+- [ ] 16.047 REQUIREMENT _(منبع: خط 34945)_
+- [ ] 16.048 REQUIREMENT _(منبع: خط 34949)_
+- [ ] 16.049 REQUIREMENT _(منبع: خط 34953)_
+- [ ] 16.050 REQUIREMENT _(منبع: خط 34957)_
+- [ ] 16.051 REQUIREMENT _(منبع: خط 34961)_
+- [ ] 16.052 REQUIREMENT _(منبع: خط 34965)_
+- [ ] 16.053 REQUIREMENT _(منبع: خط 34969)_
+- [ ] 16.054 REQUIREMENT _(منبع: خط 34973)_
+- [ ] 16.055 REQUIREMENT _(منبع: خط 34977)_
+- [ ] 16.056 REQUIREMENT _(منبع: خط 34981)_
+- [ ] 16.057 REQUIREMENT _(منبع: خط 34985)_
+- [ ] 16.058 REQUIREMENT _(منبع: خط 34989)_
+- [ ] 16.059 REQUIREMENT _(منبع: خط 34993)_
+- [ ] 16.060 REQUIREMENT _(منبع: خط 34997)_
+- [ ] 16.061 REQUIREMENT _(منبع: خط 35001)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 35006)_
+
+## Part 17 — TRADING PLATFORM MASTER PROMPT — PART 17
+
+> محدودهٔ منبع: خطوط 35025 تا 35341. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 17.001 REQUIREMENT _(منبع: خط 35034)_
+- [ ] 17.002 REQUIREMENT _(منبع: خط 35038)_
+- [ ] 17.003 REQUIREMENT _(منبع: خط 35042)_
+- [ ] 17.004 REQUIREMENT _(منبع: خط 35046)_
+- [ ] 17.005 REQUIREMENT _(منبع: خط 35050)_
+- [ ] 17.006 REQUIREMENT _(منبع: خط 35054)_
+- [ ] 17.007 REQUIREMENT _(منبع: خط 35058)_
+- [ ] 17.008 REQUIREMENT _(منبع: خط 35062)_
+- [ ] 17.009 REQUIREMENT _(منبع: خط 35066)_
+- [ ] 17.010 REQUIREMENT _(منبع: خط 35070)_
+- [ ] 17.011 REQUIREMENT _(منبع: خط 35074)_
+- [ ] 17.012 REQUIREMENT _(منبع: خط 35078)_
+- [ ] 17.013 REQUIREMENT _(منبع: خط 35082)_
+- [ ] 17.014 REQUIREMENT _(منبع: خط 35086)_
+- [ ] 17.015 REQUIREMENT _(منبع: خط 35090)_
+- [ ] 17.016 REQUIREMENT _(منبع: خط 35094)_
+- [ ] 17.017 REQUIREMENT _(منبع: خط 35098)_
+- [ ] 17.018 REQUIREMENT _(منبع: خط 35102)_
+- [ ] 17.019 REQUIREMENT _(منبع: خط 35106)_
+- [ ] 17.020 REQUIREMENT _(منبع: خط 35110)_
+- [ ] 17.021 REQUIREMENT _(منبع: خط 35114)_
+- [ ] 17.022 REQUIREMENT _(منبع: خط 35118)_
+- [ ] 17.023 REQUIREMENT _(منبع: خط 35122)_
+- [ ] 17.024 REQUIREMENT _(منبع: خط 35126)_
+- [ ] 17.025 REQUIREMENT _(منبع: خط 35130)_
+- [ ] 17.026 REQUIREMENT _(منبع: خط 35134)_
+- [ ] 17.027 REQUIREMENT _(منبع: خط 35138)_
+- [ ] 17.028 REQUIREMENT _(منبع: خط 35142)_
+- [ ] 17.029 REQUIREMENT _(منبع: خط 35146)_
+- [ ] 17.030 REQUIREMENT _(منبع: خط 35150)_
+- [ ] 17.031 REQUIREMENT _(منبع: خط 35154)_
+- [ ] 17.032 REQUIREMENT _(منبع: خط 35158)_
+- [ ] 17.033 REQUIREMENT _(منبع: خط 35162)_
+- [ ] 17.034 REQUIREMENT _(منبع: خط 35166)_
+- [ ] 17.035 REQUIREMENT _(منبع: خط 35170)_
+- [ ] 17.036 REQUIREMENT _(منبع: خط 35174)_
+- [ ] 17.037 REQUIREMENT _(منبع: خط 35178)_
+- [ ] 17.038 REQUIREMENT _(منبع: خط 35182)_
+- [ ] 17.039 REQUIREMENT _(منبع: خط 35186)_
+- [ ] 17.040 REQUIREMENT _(منبع: خط 35190)_
+- [ ] 17.041 REQUIREMENT _(منبع: خط 35194)_
+- [ ] 17.042 REQUIREMENT _(منبع: خط 35198)_
+- [ ] 17.043 REQUIREMENT _(منبع: خط 35202)_
+- [ ] 17.044 REQUIREMENT _(منبع: خط 35206)_
+- [ ] 17.045 REQUIREMENT _(منبع: خط 35210)_
+- [ ] 17.046 REQUIREMENT _(منبع: خط 35214)_
+- [ ] 17.047 REQUIREMENT _(منبع: خط 35218)_
+- [ ] 17.048 REQUIREMENT _(منبع: خط 35222)_
+- [ ] 17.049 REQUIREMENT _(منبع: خط 35226)_
+- [ ] 17.050 REQUIREMENT _(منبع: خط 35230)_
+- [ ] 17.051 REQUIREMENT _(منبع: خط 35234)_
+- [ ] 17.052 REQUIREMENT _(منبع: خط 35238)_
+- [ ] 17.053 REQUIREMENT _(منبع: خط 35242)_
+- [ ] 17.054 REQUIREMENT _(منبع: خط 35246)_
+- [ ] 17.055 REQUIREMENT _(منبع: خط 35250)_
+- [ ] 17.056 REQUIREMENT _(منبع: خط 35254)_
+- [ ] 17.057 REQUIREMENT _(منبع: خط 35258)_
+- [ ] 17.058 REQUIREMENT _(منبع: خط 35262)_
+- [ ] 17.059 REQUIREMENT _(منبع: خط 35266)_
+- [ ] 17.060 REQUIREMENT _(منبع: خط 35270)_
+- [ ] 17.061 REQUIREMENT _(منبع: خط 35274)_
+- [ ] 17.062 REQUIREMENT _(منبع: خط 35278)_
+- [ ] 17.063 REQUIREMENT _(منبع: خط 35282)_
+- [ ] 17.064 REQUIREMENT _(منبع: خط 35286)_
+- [ ] 17.065 REQUIREMENT _(منبع: خط 35290)_
+- [ ] 17.066 REQUIREMENT _(منبع: خط 35294)_
+- [ ] 17.067 REQUIREMENT _(منبع: خط 35298)_
+- [ ] 17.068 REQUIREMENT _(منبع: خط 35302)_
+- [ ] 17.069 REQUIREMENT _(منبع: خط 35306)_
+- [ ] 17.070 REQUIREMENT _(منبع: خط 35310)_
+- [ ] 17.071 REQUIREMENT _(منبع: خط 35314)_
+- [ ] 17.072 REQUIREMENT _(منبع: خط 35318)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 35323)_
+
+## Part 18 — TRADING PLATFORM MASTER PROMPT — PART 18
+
+> محدودهٔ منبع: خطوط 35342 تا 35666. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 18.001 REQUIREMENT _(منبع: خط 35351)_
+- [ ] 18.002 REQUIREMENT _(منبع: خط 35355)_
+- [ ] 18.003 REQUIREMENT _(منبع: خط 35359)_
+- [ ] 18.004 REQUIREMENT _(منبع: خط 35363)_
+- [ ] 18.005 REQUIREMENT _(منبع: خط 35367)_
+- [ ] 18.006 REQUIREMENT _(منبع: خط 35371)_
+- [ ] 18.007 REQUIREMENT _(منبع: خط 35375)_
+- [ ] 18.008 REQUIREMENT _(منبع: خط 35379)_
+- [ ] 18.009 REQUIREMENT _(منبع: خط 35383)_
+- [ ] 18.010 REQUIREMENT _(منبع: خط 35387)_
+- [ ] 18.011 REQUIREMENT _(منبع: خط 35391)_
+- [ ] 18.012 REQUIREMENT _(منبع: خط 35395)_
+- [ ] 18.013 REQUIREMENT _(منبع: خط 35399)_
+- [ ] 18.014 REQUIREMENT _(منبع: خط 35403)_
+- [ ] 18.015 REQUIREMENT _(منبع: خط 35407)_
+- [ ] 18.016 REQUIREMENT _(منبع: خط 35411)_
+- [ ] 18.017 REQUIREMENT _(منبع: خط 35415)_
+- [ ] 18.018 REQUIREMENT _(منبع: خط 35419)_
+- [ ] 18.019 REQUIREMENT _(منبع: خط 35423)_
+- [ ] 18.020 REQUIREMENT _(منبع: خط 35427)_
+- [ ] 18.021 REQUIREMENT _(منبع: خط 35431)_
+- [ ] 18.022 REQUIREMENT _(منبع: خط 35435)_
+- [ ] 18.023 REQUIREMENT _(منبع: خط 35439)_
+- [ ] 18.024 REQUIREMENT _(منبع: خط 35443)_
+- [ ] 18.025 REQUIREMENT _(منبع: خط 35447)_
+- [ ] 18.026 REQUIREMENT _(منبع: خط 35451)_
+- [ ] 18.027 REQUIREMENT _(منبع: خط 35455)_
+- [ ] 18.028 REQUIREMENT _(منبع: خط 35459)_
+- [ ] 18.029 REQUIREMENT _(منبع: خط 35463)_
+- [ ] 18.030 REQUIREMENT _(منبع: خط 35467)_
+- [ ] 18.031 REQUIREMENT _(منبع: خط 35471)_
+- [ ] 18.032 REQUIREMENT _(منبع: خط 35475)_
+- [ ] 18.033 REQUIREMENT _(منبع: خط 35479)_
+- [ ] 18.034 REQUIREMENT _(منبع: خط 35483)_
+- [ ] 18.035 REQUIREMENT _(منبع: خط 35487)_
+- [ ] 18.036 REQUIREMENT _(منبع: خط 35491)_
+- [ ] 18.037 REQUIREMENT _(منبع: خط 35495)_
+- [ ] 18.038 REQUIREMENT _(منبع: خط 35499)_
+- [ ] 18.039 REQUIREMENT _(منبع: خط 35503)_
+- [ ] 18.040 REQUIREMENT _(منبع: خط 35507)_
+- [ ] 18.041 REQUIREMENT _(منبع: خط 35511)_
+- [ ] 18.042 REQUIREMENT _(منبع: خط 35515)_
+- [ ] 18.043 REQUIREMENT _(منبع: خط 35519)_
+- [ ] 18.044 REQUIREMENT _(منبع: خط 35523)_
+- [ ] 18.045 REQUIREMENT _(منبع: خط 35527)_
+- [ ] 18.046 REQUIREMENT _(منبع: خط 35531)_
+- [ ] 18.047 REQUIREMENT _(منبع: خط 35535)_
+- [ ] 18.048 REQUIREMENT _(منبع: خط 35539)_
+- [ ] 18.049 REQUIREMENT _(منبع: خط 35543)_
+- [ ] 18.050 REQUIREMENT _(منبع: خط 35547)_
+- [ ] 18.051 REQUIREMENT _(منبع: خط 35551)_
+- [ ] 18.052 REQUIREMENT _(منبع: خط 35555)_
+- [ ] 18.053 REQUIREMENT _(منبع: خط 35559)_
+- [ ] 18.054 REQUIREMENT _(منبع: خط 35563)_
+- [ ] 18.055 REQUIREMENT _(منبع: خط 35567)_
+- [ ] 18.056 REQUIREMENT _(منبع: خط 35571)_
+- [ ] 18.057 REQUIREMENT _(منبع: خط 35575)_
+- [ ] 18.058 REQUIREMENT _(منبع: خط 35579)_
+- [ ] 18.059 REQUIREMENT _(منبع: خط 35583)_
+- [ ] 18.060 REQUIREMENT _(منبع: خط 35587)_
+- [ ] 18.061 REQUIREMENT _(منبع: خط 35591)_
+- [ ] 18.062 REQUIREMENT _(منبع: خط 35595)_
+- [ ] 18.063 REQUIREMENT _(منبع: خط 35599)_
+- [ ] 18.064 REQUIREMENT _(منبع: خط 35603)_
+- [ ] 18.065 REQUIREMENT _(منبع: خط 35607)_
+- [ ] 18.066 REQUIREMENT _(منبع: خط 35611)_
+- [ ] 18.067 REQUIREMENT _(منبع: خط 35615)_
+- [ ] 18.068 REQUIREMENT _(منبع: خط 35619)_
+- [ ] 18.069 REQUIREMENT _(منبع: خط 35623)_
+- [ ] 18.070 REQUIREMENT _(منبع: خط 35627)_
+- [ ] 18.071 REQUIREMENT _(منبع: خط 35631)_
+- [ ] 18.072 REQUIREMENT _(منبع: خط 35635)_
+- [ ] 18.073 REQUIREMENT _(منبع: خط 35639)_
+- [ ] 18.074 REQUIREMENT _(منبع: خط 35643)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 35648)_
+
+## Part 19 — TRADING PLATFORM MASTER PROMPT — PART 19
+
+> محدودهٔ منبع: خطوط 35667 تا 35971. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 19.001 REQUIREMENT _(منبع: خط 35676)_
+- [ ] 19.002 REQUIREMENT _(منبع: خط 35680)_
+- [ ] 19.003 REQUIREMENT _(منبع: خط 35684)_
+- [ ] 19.004 REQUIREMENT _(منبع: خط 35688)_
+- [ ] 19.005 REQUIREMENT _(منبع: خط 35692)_
+- [ ] 19.006 REQUIREMENT _(منبع: خط 35696)_
+- [ ] 19.007 REQUIREMENT _(منبع: خط 35700)_
+- [ ] 19.008 REQUIREMENT _(منبع: خط 35704)_
+- [ ] 19.009 REQUIREMENT _(منبع: خط 35708)_
+- [ ] 19.010 REQUIREMENT _(منبع: خط 35712)_
+- [ ] 19.011 REQUIREMENT _(منبع: خط 35716)_
+- [ ] 19.012 REQUIREMENT _(منبع: خط 35720)_
+- [ ] 19.013 REQUIREMENT _(منبع: خط 35724)_
+- [ ] 19.014 REQUIREMENT _(منبع: خط 35728)_
+- [ ] 19.015 REQUIREMENT _(منبع: خط 35732)_
+- [ ] 19.016 REQUIREMENT _(منبع: خط 35736)_
+- [ ] 19.017 REQUIREMENT _(منبع: خط 35740)_
+- [ ] 19.018 REQUIREMENT _(منبع: خط 35744)_
+- [ ] 19.019 REQUIREMENT _(منبع: خط 35748)_
+- [ ] 19.020 REQUIREMENT _(منبع: خط 35752)_
+- [ ] 19.021 REQUIREMENT _(منبع: خط 35756)_
+- [ ] 19.022 REQUIREMENT _(منبع: خط 35760)_
+- [ ] 19.023 REQUIREMENT _(منبع: خط 35764)_
+- [ ] 19.024 REQUIREMENT _(منبع: خط 35768)_
+- [ ] 19.025 REQUIREMENT _(منبع: خط 35772)_
+- [ ] 19.026 REQUIREMENT _(منبع: خط 35776)_
+- [ ] 19.027 REQUIREMENT _(منبع: خط 35780)_
+- [ ] 19.028 REQUIREMENT _(منبع: خط 35784)_
+- [ ] 19.029 REQUIREMENT _(منبع: خط 35788)_
+- [ ] 19.030 REQUIREMENT _(منبع: خط 35792)_
+- [ ] 19.031 REQUIREMENT _(منبع: خط 35796)_
+- [ ] 19.032 REQUIREMENT _(منبع: خط 35800)_
+- [ ] 19.033 REQUIREMENT _(منبع: خط 35804)_
+- [ ] 19.034 REQUIREMENT _(منبع: خط 35808)_
+- [ ] 19.035 REQUIREMENT _(منبع: خط 35812)_
+- [ ] 19.036 REQUIREMENT _(منبع: خط 35816)_
+- [ ] 19.037 REQUIREMENT _(منبع: خط 35820)_
+- [ ] 19.038 REQUIREMENT _(منبع: خط 35824)_
+- [ ] 19.039 REQUIREMENT _(منبع: خط 35828)_
+- [ ] 19.040 REQUIREMENT _(منبع: خط 35832)_
+- [ ] 19.041 REQUIREMENT _(منبع: خط 35836)_
+- [ ] 19.042 REQUIREMENT _(منبع: خط 35840)_
+- [ ] 19.043 REQUIREMENT _(منبع: خط 35844)_
+- [ ] 19.044 REQUIREMENT _(منبع: خط 35848)_
+- [ ] 19.045 REQUIREMENT _(منبع: خط 35852)_
+- [ ] 19.046 REQUIREMENT _(منبع: خط 35856)_
+- [ ] 19.047 REQUIREMENT _(منبع: خط 35860)_
+- [ ] 19.048 REQUIREMENT _(منبع: خط 35864)_
+- [ ] 19.049 REQUIREMENT _(منبع: خط 35868)_
+- [ ] 19.050 REQUIREMENT _(منبع: خط 35872)_
+- [ ] 19.051 REQUIREMENT _(منبع: خط 35876)_
+- [ ] 19.052 REQUIREMENT _(منبع: خط 35880)_
+- [ ] 19.053 REQUIREMENT _(منبع: خط 35884)_
+- [ ] 19.054 REQUIREMENT _(منبع: خط 35888)_
+- [ ] 19.055 REQUIREMENT _(منبع: خط 35892)_
+- [ ] 19.056 REQUIREMENT _(منبع: خط 35896)_
+- [ ] 19.057 REQUIREMENT _(منبع: خط 35900)_
+- [ ] 19.058 REQUIREMENT _(منبع: خط 35904)_
+- [ ] 19.059 REQUIREMENT _(منبع: خط 35908)_
+- [ ] 19.060 REQUIREMENT _(منبع: خط 35912)_
+- [ ] 19.061 REQUIREMENT _(منبع: خط 35916)_
+- [ ] 19.062 REQUIREMENT _(منبع: خط 35920)_
+- [ ] 19.063 REQUIREMENT _(منبع: خط 35924)_
+- [ ] 19.064 REQUIREMENT _(منبع: خط 35928)_
+- [ ] 19.065 REQUIREMENT _(منبع: خط 35932)_
+- [ ] 19.066 REQUIREMENT _(منبع: خط 35936)_
+- [ ] 19.067 REQUIREMENT _(منبع: خط 35940)_
+- [ ] 19.068 REQUIREMENT _(منبع: خط 35944)_
+- [ ] 19.069 REQUIREMENT _(منبع: خط 35948)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 35953)_
+
+## Part 20 — TRADING PLATFORM MASTER PROMPT — PART 20
+
+> محدودهٔ منبع: خطوط 35972 تا 36331. موارد زیر از تیترهای همین بخش استخراج شده‌اند.
+
+- [ ] 20.001 REQUIREMENT _(منبع: خط 35981)_
+- [ ] 20.002 REQUIREMENT _(منبع: خط 35985)_
+- [ ] 20.003 REQUIREMENT _(منبع: خط 35989)_
+- [ ] 20.004 REQUIREMENT _(منبع: خط 35993)_
+- [ ] 20.005 REQUIREMENT _(منبع: خط 35997)_
+- [ ] 20.006 REQUIREMENT _(منبع: خط 36001)_
+- [ ] 20.007 REQUIREMENT _(منبع: خط 36005)_
+- [ ] 20.008 REQUIREMENT _(منبع: خط 36009)_
+- [ ] 20.009 REQUIREMENT _(منبع: خط 36013)_
+- [ ] 20.010 REQUIREMENT _(منبع: خط 36017)_
+- [ ] 20.011 REQUIREMENT _(منبع: خط 36021)_
+- [ ] 20.012 REQUIREMENT _(منبع: خط 36025)_
+- [ ] 20.013 REQUIREMENT _(منبع: خط 36029)_
+- [ ] 20.014 REQUIREMENT _(منبع: خط 36033)_
+- [ ] 20.015 REQUIREMENT _(منبع: خط 36037)_
+- [ ] 20.016 REQUIREMENT _(منبع: خط 36041)_
+- [ ] 20.017 REQUIREMENT _(منبع: خط 36045)_
+- [ ] 20.018 REQUIREMENT _(منبع: خط 36049)_
+- [ ] 20.019 REQUIREMENT _(منبع: خط 36053)_
+- [ ] 20.020 REQUIREMENT _(منبع: خط 36057)_
+- [ ] 20.021 REQUIREMENT _(منبع: خط 36061)_
+- [ ] 20.022 REQUIREMENT _(منبع: خط 36065)_
+- [ ] 20.023 REQUIREMENT _(منبع: خط 36069)_
+- [ ] 20.024 REQUIREMENT _(منبع: خط 36073)_
+- [ ] 20.025 REQUIREMENT _(منبع: خط 36077)_
+- [ ] 20.026 REQUIREMENT _(منبع: خط 36081)_
+- [ ] 20.027 REQUIREMENT _(منبع: خط 36085)_
+- [ ] 20.028 REQUIREMENT _(منبع: خط 36089)_
+- [ ] 20.029 REQUIREMENT _(منبع: خط 36093)_
+- [ ] 20.030 REQUIREMENT _(منبع: خط 36097)_
+- [ ] 20.031 REQUIREMENT _(منبع: خط 36101)_
+- [ ] 20.032 REQUIREMENT _(منبع: خط 36105)_
+- [ ] 20.033 REQUIREMENT _(منبع: خط 36109)_
+- [ ] 20.034 REQUIREMENT _(منبع: خط 36113)_
+- [ ] 20.035 REQUIREMENT _(منبع: خط 36117)_
+- [ ] 20.036 REQUIREMENT _(منبع: خط 36121)_
+- [ ] 20.037 REQUIREMENT _(منبع: خط 36125)_
+- [ ] 20.038 REQUIREMENT _(منبع: خط 36129)_
+- [ ] 20.039 REQUIREMENT _(منبع: خط 36133)_
+- [ ] 20.040 REQUIREMENT _(منبع: خط 36137)_
+- [ ] 20.041 REQUIREMENT _(منبع: خط 36141)_
+- [ ] 20.042 REQUIREMENT _(منبع: خط 36145)_
+- [ ] 20.043 REQUIREMENT _(منبع: خط 36149)_
+- [ ] 20.044 REQUIREMENT _(منبع: خط 36153)_
+- [ ] 20.045 REQUIREMENT _(منبع: خط 36157)_
+- [ ] 20.046 REQUIREMENT _(منبع: خط 36161)_
+- [ ] 20.047 REQUIREMENT _(منبع: خط 36165)_
+- [ ] 20.048 REQUIREMENT _(منبع: خط 36169)_
+- [ ] 20.049 REQUIREMENT _(منبع: خط 36173)_
+- [ ] 20.050 REQUIREMENT _(منبع: خط 36177)_
+- [ ] 20.051 REQUIREMENT _(منبع: خط 36181)_
+- [ ] 20.052 REQUIREMENT _(منبع: خط 36185)_
+- [ ] 20.053 REQUIREMENT _(منبع: خط 36189)_
+- [ ] 20.054 REQUIREMENT _(منبع: خط 36193)_
+- [ ] 20.055 REQUIREMENT _(منبع: خط 36197)_
+- [ ] 20.056 REQUIREMENT _(منبع: خط 36201)_
+- [ ] 20.057 REQUIREMENT _(منبع: خط 36205)_
+- [ ] 20.058 REQUIREMENT _(منبع: خط 36209)_
+- [ ] 20.059 REQUIREMENT _(منبع: خط 36213)_
+- [ ] 20.060 REQUIREMENT _(منبع: خط 36217)_
+- [ ] 20.061 REQUIREMENT _(منبع: خط 36221)_
+- [ ] 20.062 REQUIREMENT _(منبع: خط 36225)_
+- [ ] 20.063 REQUIREMENT _(منبع: خط 36229)_
+- [ ] 20.064 REQUIREMENT _(منبع: خط 36233)_
+- [ ] 20.065 REQUIREMENT _(منبع: خط 36237)_
+- [ ] 20.066 REQUIREMENT _(منبع: خط 36241)_
+- [ ] 20.067 REQUIREMENT _(منبع: خط 36245)_
+- [ ] 20.068 REQUIREMENT _(منبع: خط 36249)_
+- [ ] 20.069 REQUIREMENT _(منبع: خط 36253)_
+- [ ] 20.070 REQUIREMENT _(منبع: خط 36257)_
+- [ ] 20.071 REQUIREMENT _(منبع: خط 36261)_
+- [ ] 20.072 REQUIREMENT _(منبع: خط 36265)_
+- [ ] 20.073 REQUIREMENT _(منبع: خط 36269)_
+- [ ] 20.074 REQUIREMENT _(منبع: خط 36273)_
+- [ ] 20.075 REQUIREMENT _(منبع: خط 36277)_
+- [ ] 20.076 REQUIREMENT _(منبع: خط 36281)_
+- [ ] 20.077 REQUIREMENT _(منبع: خط 36285)_
+- [ ] 20.078 REQUIREMENT _(منبع: خط 36289)_
+- [ ] 20.079 REQUIREMENT _(منبع: خط 36293)_
+- [ ] 20.080 REQUIREMENT _(منبع: خط 36297)_
+- [ ] 20.081 REQUIREMENT _(منبع: خط 36301)_
+- [ ] 20.082 REQUIREMENT _(منبع: خط 36305)_
+- [ ] 20.083 REQUIREMENT _(منبع: خط 36309)_
+- [ ] FINAL ACCEPTANCE GATE _(منبع: خط 36314)_
+
+## مسیر اجرای فرانت‌اند فعلی
+
+- [ ] تکمیل صفحهٔ Profile با اتصال واقعی به authentication/session و ذخیرهٔ پایدار سمت سرور.
+- [ ] تبدیل فرم‌های نمایشی به فرم‌های schema-validated با خطای فیلدی، dirty state و retry شبکه.
+- [ ] افزودن مدیریت session، two-step verification، دستگاه‌های فعال و revoke access.
+- [ ] افزودن مدیریت venue/API permissions با اصل least privilege، withdrawal disabled و audit log.
+- [ ] افزودن صفحات Positions، Alerts، Automations و Settings با وضعیت‌های empty/loading/error.
+- [ ] تکمیل محتوای پژوهشی واقعی با editorial review، provenance و سیاست اصلاح محتوا.
+- [ ] افزودن تست‌های unit، integration، accessibility و end-to-end برای جریان‌های اصلی.
+- [ ] بازبینی عملکرد bundle و code splitting در صورت رشد صفحات و نمودارها.
+- [ ] بازبینی زبان فارسی و RTL در تمام سطوح، فرم‌ها، نمودارها و Toastها.
+- [ ] تهیهٔ مستند release، runbook، incident response و checklist ارسال store.
+
+## مرجع اصلی
+
+- سند کامل و بدون خلاصه‌سازی: `all_prompts.md`
+- فایل وضعیت پروژه: `todo.md`
+- جهت طراحی: `ideas.md`
