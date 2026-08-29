@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Route, Router as WouterRouter, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
 import Research from "./pages/Research";
 import Dashboard from "./pages/Dashboard";
@@ -39,12 +40,14 @@ function Router() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark" switchable>
+      <LanguageProvider>
+        <ThemeProvider defaultTheme="dark" switchable>
         <TooltipProvider>
           <Toaster position="bottom-left" richColors />
           <Router />
         </TooltipProvider>
-      </ThemeProvider>
+        </ThemeProvider>
+      </LanguageProvider>
     </ErrorBoundary>
   );
 }

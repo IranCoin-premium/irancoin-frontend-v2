@@ -7,11 +7,14 @@ import { ArrowUpRight, Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
+const navKeys: Record<string,string> = { "/research": "nav.research", "/dashboard": "nav.workspace", "/pricing": "nav.access" };
 const navItems = [
-  { href: "/research", label: "Research" },
-  { href: "/dashboard", label: "Workspace" },
-  { href: "/pricing", label: "Access" },
+  { href: "/research", labelKey: "nav.research" },
+  { href: "/dashboard", labelKey: "nav.workspace" },
+  { href: "/pricing", labelKey: "nav.access" },
 ];
 
 export function BrandMark({ small = false }: { small?: boolean }) {
@@ -27,11 +30,12 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
-  const themeLabel = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+  const { t } = useLanguage();
+  const themeLabel = theme === "dark" ? t("common.switchToLight") : t("common.switchToDark");
 
   const handleSoon = () => {
-    toast("این بخش در نسخهٔ بعدی فعال می‌شود.", {
-      description: "رابط کاربری آماده است؛ اتصال واقعی به حساب و دادهٔ زنده نیازمند بک‌اند امن است.",
+    toast(t("common.comingSoon"), {
+      description: t("common.comingSoonDesc"),
     });
   };
 
@@ -45,14 +49,15 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <nav className="desktop-nav" aria-label="Primary navigation">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className={location === item.href ? "is-active" : ""}>
-                {item.label}
+                {t(item.labelKey)}
               </Link>
             ))}
           </nav>
           <div className="header-actions">
-            <span className="header-status"><i /> Systems nominal</span>
+            <LanguageSwitcher />
+            <span className="header-status"><i /> {t("common.systemsNominal")}</span>
             <button className="theme-toggle" onClick={toggleTheme} aria-label={themeLabel} aria-pressed={theme === "light"} title={themeLabel}>{theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}<span>{theme === "dark" ? "Light" : "Dark"}</span></button>
-            <button className="button button--quiet button--compact" onClick={handleSoon}>Sign in <ArrowUpRight size={15} /></button>
+            <button className="button button--quiet button--compact" onClick={handleSoon}>{t("common.signIn")} <ArrowUpRight size={15} /></button>
             <button className="menu-trigger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -62,10 +67,11 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <nav className="mobile-nav" aria-label="Mobile navigation">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={location === item.href ? "is-active" : ""}>
-                {item.label}
+                {t(item.labelKey)}
               </Link>
             ))}
-            <button className="theme-toggle theme-toggle--mobile" onClick={toggleTheme} aria-label={themeLabel} aria-pressed={theme === "light"}>{theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}<span>{theme === "dark" ? "Light mode" : "Dark mode"}</span></button>
+            <div style={{padding:"4px 0"}}><LanguageSwitcher compact /></div>
+            <button className="theme-toggle theme-toggle--mobile" onClick={toggleTheme} aria-label={themeLabel} aria-pressed={theme === "light"}>{theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}<span>{theme === "dark" ? t("common.light") + " mode" : t("common.dark") + " mode"}</span></button>
             <button className="button button--quiet" onClick={handleSoon}>Sign in <ArrowUpRight size={15} /></button>
           </nav>
         )}
@@ -75,22 +81,22 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="site-footer__grid">
           <div>
             <BrandMark small />
-            <p className="footer-copy">Decision support for people who prefer context to certainty.</p>
+            <p className="footer-copy">{t("footer.copy")}</p>
           </div>
           <div className="footer-links">
-            <span className="eyebrow">Explore</span>
-            <Link href="/research">Research journal</Link>
-            <Link href="/dashboard">Workspace preview</Link>
-            <Link href="/pricing">Access plans</Link>
+            <span className="eyebrow">{t("footer.explore")}</span>
+            <Link href="/research">{t("footer.researchJournal")}</Link>
+            <Link href="/dashboard">{t("footer.workspacePreview")}</Link>
+            <Link href="/pricing">{t("footer.accessPlans")}</Link>
           </div>
           <div className="footer-links">
-            <span className="eyebrow">Boundary</span>
-            <span>Not investment advice.</span>
-            <span>Illustrative data only.</span>
-            <span>2026 · v0.8 preview</span>
+            <span className="eyebrow">{t("footer.boundary")}</span>
+            <span>{t("footer.notAdvice")}</span>
+            <span>{t("footer.illustrative")}</span>
+            <span>{t("footer.version")}</span>
           </div>
         </div>
-        <div className="footer-bottom"><span>© IranCoin Premium</span><span>Built for calm decisions.</span></div>
+        <div className="footer-bottom"><span>© IranCoin Premium</span><span>{t("footer.builtFor")}</span></div>
       </footer>
     </div>
   );

@@ -6,6 +6,7 @@ import { ArrowDownRight, ArrowUpRight, BarChart3, ChevronRight, CircleAlert, Eye
 import { Link } from "wouter";
 import { toast } from "sonner";
 import { EvidenceRail, SectionLabel, SiteShell } from "@/components/SiteShell";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const marketItems = [
   { name: "BTC / USD", price: "$67,420.18", change: "+2.41%", positive: true },
@@ -21,7 +22,8 @@ const workflow = [
 ];
 
 export default function Home() {
-  const showSoon = () => toast("اتصال حساب در نسخهٔ نمایشی غیرفعال است.", { description: "برای اتصال واقعی به صرافی یا کارگزار، بک‌اند امن و احراز هویت لازم است." });
+  const { t } = useLanguage();
+  const showSoon = () => toast(t("home.demoSoon"), { description: t("home.demoSoonDesc") });
 
   return (
     <SiteShell>
@@ -33,22 +35,22 @@ export default function Home() {
           <div className="hero__coordinate coordinate-two">FIELD NOTE / 08.42</div>
         </div>
         <div className="hero__content container">
-          <div className="hero__eyebrow"><span className="pulse-dot" /> Independent financial intelligence / 2026</div>
+          <div className="hero__eyebrow"><span className="pulse-dot" /> {t("home.eyebrow")}</div>
           <div className="hero__copy">
-            <EvidenceRail label="Signal quality" value="Calibrated / No guarantees" />
-            <h1>See the market<br /><em>before</em> you act.</h1>
-            <p className="hero__lede">IranCoin Premium brings research, signals, and execution context into one calm workspace for disciplined operators.</p>
+            <EvidenceRail label={t("home.signalQuality")} value={t("home.signalValue")} />
+            <h1>{t("home.title1")}<br /><em>{t("home.title2")}</em> {t("home.title3")}</h1>
+            <p className="hero__lede">{t("home.lede")}</p>
             <div className="hero__actions">
-              <Link href="/dashboard" className="button button--copper">Open workspace <ArrowUpRight size={17} /></Link>
-              <Link href="/research" className="text-link">Read the methodology <ChevronRight size={15} /></Link>
+              <Link href="/dashboard" className="button button--copper">{t("home.openWorkspace")} <ArrowUpRight size={17} /></Link>
+              <Link href="/research" className="text-link">{t("home.readMethodology")} <ChevronRight size={15} /></Link>
             </div>
           </div>
-          <div className="hero__note"><span>01</span><p>Not advice. Not a promise.<br />Just a clearer starting point.</p></div>
+          <div className="hero__note"><span>01</span><p>{t("home.notAdviceTitle")}<br />{t("home.notAdviceBody")}</p></div>
         </div>
       </section>
 
       <section className="ticker-bar" aria-label="Illustrative market context">
-        <div className="ticker-bar__label"><span className="eyebrow">Market context</span><span>Illustrative · delayed</span></div>
+        <div className="ticker-bar__label"><span className="eyebrow">{t("home.marketContext")}</span><span>{t("home.illustrativeDelayed")}</span></div>
         <div className="ticker-bar__items">
           {marketItems.map((item) => <div className="ticker-item" key={item.name}><span>{item.name}</span><strong>{item.price}</strong><small className={item.positive ? "is-positive" : "is-negative"}>{item.change}</small></div>)}
         </div>
