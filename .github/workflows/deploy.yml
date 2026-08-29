@@ -15,7 +15,10 @@ jobs:
         with:
           node-version: 22
       - run: cd project && npm install --legacy-peer-deps && npm run build
-      - run: ls -la project/dist/public/ | head -20
+      - run: |
+          cp project/dist/public/index.html project/dist/public/404.html
+          touch project/dist/public/.nojekyll
+          ls -lh project/dist/public/ | head -20
       - uses: actions/upload-pages-artifact@v3
         with:
           path: project/dist/public
