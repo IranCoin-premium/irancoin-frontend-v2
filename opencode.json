@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "agent": {
+    "translator-agent": {
+      "description": "Professional FA/EN translator agent",
+      "mode": "subagent"
+    }
+  }
+}
